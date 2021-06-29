@@ -1,0 +1,49 @@
+<!-- <html>
+<head>
+
+</head>
+
+<body>
+
+    <form id="myForm" class="form">
+    <input id="uName" type="text">
+    <input id="pwd" type="password">
+    <input type="submit" value="Submit">
+    
+</form>
+    </body>
+</body>
+
+
+<script>
+const myForm = document.getElementById("myForm");
+
+myForm.addEventListener("submit", function(myFunction){
+   
+    myFunction.preventDefault();
+
+    const formData = new FormData(this);
+
+    myBody = {
+        "userName": {{uName}},
+        "Password":{{pass}}"
+    }
+
+
+
+    fetch('http://localhost:3000/adminLogin',{
+        method: 'POST',
+        body: myBody,   
+    }).then(function(response){
+        return response.text();
+        
+    }).then(function(text){
+
+    })
+});
+
+
+<
+    </script>
+
+</html> -->
